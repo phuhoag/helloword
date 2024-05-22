@@ -3,7 +3,8 @@ public class Bai02 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.print("hello cac ban");
+		System.out.print("Hello word");
+		
 	}
 
 }
