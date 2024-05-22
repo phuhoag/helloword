@@ -22,7 +22,7 @@ public class Bai03 {
 			
 		}else {
 			double x = -b/a;
-			System.out.print("nghiem co phuong trinh la :" + x);
+			System.out.println("nghiem cua phuong trinh la :" + x);
 		}
 
 	}
