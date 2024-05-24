@@ -10,7 +10,7 @@ public class QLSV {
 		sv.hoten = "Quy Phu";
 		sv.Namsinh = 2005;
 		sv.SDT = "0943519045";
-		System.out.print("ho ten:" + sv.hoten +  "nam sinh" + sv.Namsinh + "sdt " + sv.SDT );
+		System.out.print("ho ten:" + sv.hoten +  "namsinh" + sv.Namsinh + "sdt " + sv.SDT );
 		
 		
 		
