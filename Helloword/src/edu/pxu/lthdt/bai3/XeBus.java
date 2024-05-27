@@ -25,14 +25,13 @@ public int getNamsanxuat() {
 	return namsanxuat;
 }
 public void setNamsanxuat(int namsanxuat) { 
-	
-	LocalDate date = LocalDate.now();
-    int namhientai = date.getYear();
-    
-    if (namsanxuat < 1894 || namsanxuat > namhientai) {
-        System.out.println("Nam san xuat " + namsanxuat + " khong hop le.");
-    }
-    this.namsanxuat = namsanxuat;
+	LocalDate ngayht = LocalDate.now();
+	int namhientai = ngayht.getYear();
+	if((namsanxuat < 1896) || (namsanxuat > namhientai)) {
+		System.out.println("Nam san xuat khong phu hop");
+	}else {
+		this.namsanxuat = namsanxuat;
+	}
 	
 }
 public float getDongco() {
