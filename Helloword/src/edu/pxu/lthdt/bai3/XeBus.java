@@ -3,7 +3,7 @@ package edu.pxu.lthdt.bai3;
 
 public class XeBus {
 	
-    public class XeBus {
+    
 private String hangxe;
 private int namsanxuat;
 private float dongco;
@@ -64,6 +64,8 @@ public void setSoghe(int soghe) {
 @Override
 public String toString() {
 	return "XeBus [hangxe=" + hangxe + ", namsanxuat=" + namsanxuat + ", dongco=" + dongco + ", soghe=" + soghe + "]";
+} 
+
 }
     
    
