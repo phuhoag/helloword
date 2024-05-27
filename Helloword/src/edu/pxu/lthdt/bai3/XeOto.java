@@ -1,8 +1,8 @@
 package edu.pxu.lthdt.bai3;
-
+import java.time.LocalDate;
 public class XeOto {
 
-    private String hangxe;
+private String hangxe;
 private int namsanxuat;
 private float dongco;
 public XeOto(String hangxe, int namsanxuat, float dongco) {
@@ -44,7 +44,9 @@ public void setDongco(float dongco) {
 @Override
 public String toString() {
 	return "XeOto [hangxe=" + hangxe + ", namsanxuat=" + namsanxuat + ", dongco=" + dongco + "]";
+} 
 }
+
 
 		
 	}
