@@ -3,56 +3,49 @@ package edu.pxu.lthdt.bai3;
 public class XeOto {
 
     private String hangxe;
-    private int namsanxuat;
-    private float dongco;
-
-   
-
-    public String getHangxe() {
-        return hangxe;
+private int namsanxuat;
+private float dongco;
+public XeOto(String hangxe, int namsanxuat, float dongco) {
+	super();
+	this.setHangxe(hangxe);
+	this.setNamsanxuat(namsanxuat);
+	this.setDongco(dongco);
+}
+public String getHangxe() {
+	return hangxe;
+}
+public void setHangxe(String hangxe) {
+	this.hangxe = hangxe;
+}
+public int getNamsanxuat() {
+	return namsanxuat;
+}
+public void setNamsanxuat(int namsanxuat) {  
+	LocalDate ngayht = LocalDate.now();
+	int namhientai = ngayht.getYear();
+	if((namsanxuat < 1885) || (namsanxuat > namhientai)) {
+		System.out.println("Nam san xuat khong phu hop");
+	}else {
+		this.namsanxuat = namsanxuat;
+	}
+}
+public float getDongco() { 
+	return dongco;
+}
+public void setDongco(float dongco) { 
+	if (dongco <= 0) {
+        System.out.println("Dong co khong the co cong suat la " + dongco + "kW");
+    } else {
+        this.dongco = dongco;
     }
+	
+	this.dongco = dongco;
+}
+@Override
+public String toString() {
+	return "XeOto [hangxe=" + hangxe + ", namsanxuat=" + namsanxuat + ", dongco=" + dongco + "]";
+}
 
-    public int getNamsanxuat() {
-        return namsanxuat;
-    }
-
-    public float getDongco() {
-        return dongco;
-    }
-
-    public String setHangxe(String hangxe) {
-        this.hangxe = hangxe;
-        
-        return hangxe;
-    }
-
-    public int setNamsanxuat(int namsanxuat) {
-        this.namsanxuat = namsanxuat;
-        return namsanxuat;
-    }
-
-    public float setDongco(float dongco) {
-        if (dongco <= 0) {
-            System.out.println("Dong co khong the co cong suat la " + dongco + "kW");
-        } else {
-            this.dongco = dongco;
-        }
-        
-        return dongco;
-    } 
-    
-    @Override
-    public String toString() {
-        return "XeOto{" + "hangxe=" + hangxe + ", namsanxuat=" + namsanxuat + ", dongco=" + dongco + '}';
-    } 
-
-    
-    
-    public XeOto(String hangxe, int namsanxuat, float dongco) {
-        this.hangxe = setHangxe(hangxe);
-        this.namsanxuat = setNamsanxuat(namsanxuat);
-        this.dongco = setDongco(dongco);
-    }
 		
 	}
 
