@@ -43,7 +43,16 @@ public void setDongco(float dongco) {
 }
 @Override
 public String toString() {
-	return "XeOto [hangxe=" + hangxe + ", namsanxuat=" + namsanxuat + ", dongco=" + dongco + "]";
+
+	if (namsanxuat == 0 || dongco == 0){
+            return "XeOto{" + "hangxe=" + hangxe + '}';
+        } else if (namsanxuat == 0) {
+            return "XeOto{" + "hangxe=" + hangxe + ", dongco=" + dongco + '}';
+        } else if (dongco == 0) {
+            return "XeOto{" + "hangxe=" + hangxe + ", namsanxuat=" + namsanxuat + '}';
+        } else {
+            return "XeBus{" + "hangxe=" + hangxe + ", namsanxuat=" + namsanxuat + ", dongco=" + dongco + '}';
+        }
 } 
 }
 
