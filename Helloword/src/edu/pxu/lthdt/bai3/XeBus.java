@@ -62,11 +62,20 @@ public void setSoghe(int soghe) {
 }
 @Override
 public String toString() {
-	return "XeBus [hangxe=" + hangxe + ", namsanxuat=" + namsanxuat + ", dongco=" + dongco + ", soghe=" + soghe + "]";
+	if (namsanxuat == 0 || dongco == 0 || soghe == 0){
+            return "XeBus{" + "hangxe=" + hangxe + '}';
+        } else if (namsanxuat == 0) {
+            return "XeBus{" + "hangxe=" + hangxe + ", dongco=" + dongco + ", soghe=" + soghe + '}';
+        } else if (dongco == 0) {
+            return "XeBus{" + "hangxe=" + hangxe + ", namsanxuat=" + namsanxuat + ", soghe=" + soghe + '}';
+        } else if (soghe == 0) {
+            return "XeBus{" + "hangxe=" + hangxe + ", namsanxuat=" + namsanxuat + ", dongco=" + dongco + '}';
+        } else {
+            return "XeBus{" + "hangxe=" + hangxe + ", namsanxuat=" + namsanxuat + ", dongco=" + dongco + ", soghe=" + soghe + '}';
 } 
 
 }
-    
+} 
    
     
 
